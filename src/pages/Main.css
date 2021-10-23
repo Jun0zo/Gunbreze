@@ -82,6 +82,9 @@ html, body {
   display:flex;
 }
 
+.modal-wrapper span {
+	color:#cadbde;
+}
 
 @media (max-width: 992px){
   .content_1 .modal-wrapper > div {

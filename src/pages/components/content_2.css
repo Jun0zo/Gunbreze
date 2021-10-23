@@ -9,7 +9,7 @@
 }
 
 .content_2 { 
-  background-color:red;
+  background-color:#42a95a;
   width:calc(100% / 3);
   height: calc(100vh - 90px);
   display:flex;

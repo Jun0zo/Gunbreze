@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './content_2.css'
 
 
-class Content_2 extends Component {
+class Content2 extends Component {
 	getPosition() {
 		navigator.geolocation.getCurrentPosition(function(position) {
 		  console.log("Latitude is :", position.coords.latitude);
@@ -32,4 +32,4 @@ class Content_2 extends Component {
 	}
 }
 
-export default Content_2;
+export default Content2;
