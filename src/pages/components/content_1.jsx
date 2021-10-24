@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import './content_1.css'
 
-
-function Content1(props) {
-	function check() {
-		console.log('1 bef ', props)
-		props.nextPage()
-		console.log('1 aft ', props.page_state)
+const Content1 = (props) => {
+	const report = () => {
+		props.setPage({
+		  state_1: false,
+		  state_2: true,
+		  state_3: false,
+	   })
 	}
 	return(
-		<section className="content_1">
+		<section className={'content_1 ' + (props.page_state.state_1 ? 'activate' : '')}>
 			<div className="modal-wrapper">
 				<div className="title">
 					<span> <span className='effect-1'>나</span>를 위해</span><br/>
@@ -21,7 +22,7 @@ function Content1(props) {
 							---
 					</div>
 				<div className="report">
-					<button className="ui inverted red button" onClick={check}>🚨 신고하기 🚨</button>
+					<button className="ui inverted red button" onClick={report}>🚨 신고하기 🚨</button>
 				</div>
 
 				<div className="show">

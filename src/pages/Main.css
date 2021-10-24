@@ -86,42 +86,32 @@ html, body {
 	color:#cadbde;
 }
 
-@media (max-width: 992px){
-  .content_1 .modal-wrapper > div {
-	margin: 60px 0px;
-  }
-	
-  .content_1 .modal-wrapper {
-	width:50%;
-  }
-  .content_2 {
-	display:none;
-  }
-
-  .content_1 {
-	width:100%;
-  }
-	
-  .content_1 .call {
-	display:none;
-  }
-
-  .content_1 .report {
-	display:flex;
-	justify-content:center;
-  }
-  .content_1 .title {
-	text-align: center;
-  }
-	
-  .content_1 .show .s-emoji {
-	text-align:center;
-  }
-}
-
 @media (max-width: 355px) {
 	.report .button {
 	  font-size:13px;
+	}
+}
+
+section {
+	visibility:hidden;
+	opacity: 0;
+	transition:visibility 0s linear 300ms, opacity 300ms;
+}
+
+section.activate {
+	opacity: 1;
+	visibility:visible;
+	transition:visibility 0s linear 300ms, opacity 300ms;
+}
+
+@media (max-width: 992px){
+	.activate {
+		visibility:visible;
+		width:100%;
+	}
+	
+	section:not(.activate) {
+		display:none;
 	}
 }
 

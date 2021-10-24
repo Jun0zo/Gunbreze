@@ -99,3 +99,29 @@
 .effect-3 {
 	animation: effect-3-animation 3s linear 6s 1 normal forwards;
 }
+
+@media (max-width: 992px){
+  .content_1 .modal-wrapper > div {
+	margin: 60px 0px;
+  }
+	
+  .content_1 .modal-wrapper {
+	width:50%;
+  }
+	
+  .content_1 .call {
+	display:none;
+  }
+
+  .content_1 .report {
+	display:flex;
+	justify-content:center;
+  }
+  .content_1 .title {
+	text-align: center;
+  }
+	
+  .content_1 .show .s-emoji {
+	text-align:center;
+  }
+}
