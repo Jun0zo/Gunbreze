@@ -33,7 +33,7 @@
 
 .content_2 .title {
 	/* border: 1px red solid; */
-	font-size:2rem;
+	font-size:24px;
 }
 
 
@@ -52,15 +52,17 @@
   }
 	
   .content_2 .modal-wrapper {
-	width:65%;
+	width:70%;
   }
 	
   .content_2 .title {
 	text-align: center;
   }
-	
-  
-	
-  
+}
+
+@media (max-width: 400px){
+  .content_2 .title > span {
+	width:90%;
+  }
 }
 
