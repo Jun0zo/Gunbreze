@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './content_3.css'
 
 
 const Content3 = (props) => {
-	const getPosition = () => {
-		
+	const report = () => {
+		console.log("report!")
 	}
+	
 	return(
 		<section className={'content_3 ' + (props.page_state.state_3 ? 'activate' : '')}>
 			<div className="modal-wrapper">
@@ -15,7 +16,7 @@ const Content3 = (props) => {
 					<span> 우리 동네를 살펴보세요! </span><br/>
 				</div>
 				<div className="report">
-					<button className="ui inverted blue button" onClick={getPosition}> 살펴보기 </button>
+					<button className="ui inverted blue button" onClick={report}> 살펴보기 </button>
 				</div>
 
 			</div>

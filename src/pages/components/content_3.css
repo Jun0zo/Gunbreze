@@ -9,7 +9,7 @@
 }
 
 .content_3 { 
-  background-color:#42a95a;
+  background-color:#42a991;
   width:calc(100% / 3);
   height: calc(100vh - 90px);
   display:flex;
@@ -41,7 +41,7 @@
   }
 	
   .content_3 .modal-wrapper {
-	width:50%;
+	width:65%;
   }
 	
   .content_3 .title {

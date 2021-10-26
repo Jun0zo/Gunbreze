@@ -9,6 +9,7 @@ class App extends Component {
 		<Router>
 			<Switch> 
 				<Route path='/' component={Main} exact/>
+				{ /* <Route path='/dashboard' component={Dashboard}/> */ }
 			</Switch> 
 		</Router>
 	  );

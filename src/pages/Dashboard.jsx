@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import Content1 from './components/content_1';
-import Content2 from './components/content_2';
-import Content3 from './components/content_3';
 import './Main.css';
 // 겨울을 걷는다
-const Main = () => {
+const Dashboard = () => {
 	const [states, setStates] = useState({
     	state_1: true,
 		state_2: false,
@@ -26,12 +23,10 @@ const Main = () => {
 		</div>
 			
 		<div className="contents">
-			<Content1 setPage={setStates} page_state={states}/>
-			<Content2 setPage={setStates} page_state={states}/>
-			<Content3 setPage={setStates} page_state={states}/>
+			<div></div>
 	   </div>
 		
       </div>
     );
 }
-export default Main;
+export default Dashboard;
